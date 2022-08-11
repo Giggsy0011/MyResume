@@ -6,88 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Igor, sv, resume">
     <meta name="description" content="Это сайт - резюме Игоря Снегирева">
+    
+    <link rel="stylesheet" href="Style.css">
     <title>Igor Snegirev Resume</title>
 </head>
 <body>
 
-     <img src="Я.jpeg" width="220" alt="Здесь моя аватарка">
+<div class="container">
 
-    <h1>Игорь Снегирёв</h1>
+    <div class="info">
+        <img src="Я.jpeg" alt="Здесь моя аватарка" class="avatar">
+   
+        <div class="info-text">
+            <h1>Игорь Снегирёв</h1>
+            
+            <P>Я стремлюсь стать <strong><em>frontend разработчиком</em></strong>, а потом изучить <strong><em>разработку приложений и игр.</em></strong></P>
 
-        <P>Я стремлюсь стать <strong><em>frontend разработчиком</em></strong>, а потом изучить <strong><em>разработку приложений и игр.</em></strong></P>
+            <p><em>Я люблю походы, путешествовать, заниматься спортом и компъютерные игры.</em></P>
 
-        <p><em>Я люблю походы, путешествовать, заниматься спортом и компъютерные игры.</em></P>
+            <h4>Список социальных сетей:</h4> 
 
+            <a href="https://vk.com/fessmagistor" target="_blank">VK</a>
+            |
+            <a href="https://web.telegram.org/z/" target="_blank">Telegram</a>
+        </div>
+    </div>
 
-        <h4>Список социальных сетей:</h4> 
+    <div class="card bg-green">
+        <h2>Мои хобби:</h2>
 
-        <a href="https://vk.com/fessmagistor" target="_blank">VK</a>
-        |
-        <a href="https://web.telegram.org/z/" target="_blank">Telegram</a>
+            <ol class="list">
+                <li>Путешествия</li>
+                <li>Спорт</li>
+                <li>ММА</li>
+                <li>Футбол</li>
+                <li>Изучение Английского</li>
+                <li>Чтение профессиональной литературы</li>
+                <li>Frontend</li>
+            </ol>
+    </div>
 
-    <h2>Мои хобби:</h2>
+    <div class="card bg-yellow">
+        <h2>Опыт работы:</h2>
 
-        <ol>
-            <li>Путешествия</li>
-            <li>Спорт</li>
-            <li>ММА</li>
-            <li>Футбол</li>
-            <li>Изучение Английского</li>
-            <li>Чтение профессиональной литературы</li>
-            <li>Frontend</li>
-        </ol>
+            <table class="table">
+                <!-- <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Должность</th>
+                        <th>Год</th>
+                    </tr>
+                </thead> -->
+                <tbody>
+                    <tr>
+                        <td>ВВ МВД РФ</td>
+                        <td>Начальник караула</td>
+                        <td>2006-2010</td>
+                    </tr>   
+                    <tr>
+                        <td>МВД РФ</td>
+                        <td>Инспектор полиции</td>
+                        <td>2011-2020</td>
+                    </tr>
+                    <tr>
+                        <td>Банк</td>
+                        <td>Наставник</td>
+                        <td>2020-сейчас</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
 
-    <h2>Опыт работы:</h2>
+    <div>
+       
 
-        <table width="350">
-            <thead>
-                <tr>
-                    <th>Название</th>
-                    <th>Должность</th>
-                    <th>Год</th>
-                 </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>ВВ МВД РФ</td>
-                    <td>Начальник караула</td>
-                    <td>2006-2010</td>
-                </tr>   
-                <tr>
-                    <td>МВД РФ</td>
-                    <td>Инспектор полиции</td>
-                    <td>2011-2020</td>
-                </tr>
-                <tr>
-                    <td>Банк</td>
-                    <td>Наставник</td>
-                    <td>2020-сейчас</td>
-                </tr>
-            </tbody>
-        </table>
+        <form class="form">
 
-        <h2>Связаться со мной</h2>
+            <h2>Связаться со мной</h2>
 
-        <form>
+            <div class="form-row"></div>
 
-            <div>
+            <div class="form-group">
                 <label for="name">Ваше имя:</label>
                 <input type="name" id="name" placeholder="Введите имя">
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="email">Ваш email:</label>
                 <input type="email" id="email" placeholder="Введите email">
             </div>
 
-            <div>
+            <div class="form-group">
                 <label for="message">Ваше сообщение:</label>
                 <br>
                 <textarea id="" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
             </div>
 
             <div>
-                <button type="submit">Отправить!</button>
+                <button class="btn" type="submit">Отправить!</button>
             </div>
             <br>
             <br>
@@ -95,6 +111,7 @@
             <br>
             <br>
         </form>
-
+    </div>
+</div>
 </body>
 </html>
